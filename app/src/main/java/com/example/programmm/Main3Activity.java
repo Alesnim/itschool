@@ -27,6 +27,7 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 pb.setProgress(0);
                 i = pb.getProgress();
+                // зачем два раза создавал поток, лучше было бы реализовать ранабл и создать общий класс-обманку в которую передавать длительность
                 new Thread(new Runnable() {
                     public void run() {
                         while (i < 100) {
@@ -55,6 +56,8 @@ public class Main3Activity extends AppCompatActivity {
             public void onClick(View v) {
                 pb.setProgress(0);
                 i = pb.getProgress();
+                // можно было вместо того что бы каждый раз определять поведение просто писать
+                // new Thread( new MyRunnable(20))
                 new Thread(new Runnable() {
                     public void run() {
                         while (i < 100) {

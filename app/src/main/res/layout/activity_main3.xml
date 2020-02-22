@@ -8,8 +8,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="173dp"
+        android:layout_width="wrap_content"
         android:layout_height="66dp"
+        android:textAlignment="center"
         android:layout_marginTop="92dp"
         android:text="Первый вид тренировки"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,9 +19,10 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="173dp"
+        android:layout_width="wrap_content"
         android:layout_height="66dp"
         android:layout_marginTop="68dp"
+        android:textAlignment="center"
         android:text="Второй вид тренировки"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

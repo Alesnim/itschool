@@ -27,17 +27,22 @@ public class Main2Activity extends AppCompatActivity {
                 if(ch1.isChecked())
                 {
                     if (!bl.enable())
-                        Toast.makeText(getApplicationContext(),"Включение", Toast.LENGTH_SHORT);
+                        // не забываем показвать тосты, которые сделали
+                        Toast.makeText(getApplicationContext(),"Включение", Toast.LENGTH_SHORT).show();
                     else
-                        Toast.makeText(getApplicationContext(),"Bluetooth включён", Toast.LENGTH_LONG);
+                        Toast.makeText(getApplicationContext(),"Bluetooth включён", Toast.LENGTH_LONG).show();
                     bl.enable();
+
+
+
+
                 }
                 if(ch2.isChecked())
-                    Toast.makeText(getApplicationContext(),"Подключено",Toast.LENGTH_SHORT);
+                    Toast.makeText(getApplicationContext(),"Подключено",Toast.LENGTH_SHORT).show();
                 if(ch3.isChecked())
                     bl.disable();
                     if(bl.disable())
-                    Toast.makeText(getApplicationContext(),"Всё выключено(пока что только bluetooth)",Toast.LENGTH_LONG);
+                    Toast.makeText(getApplicationContext(),"Всё выключено(пока что только bluetooth)",Toast.LENGTH_LONG).show();
             }
         });
         Button but = findViewById(R.id.button2);
